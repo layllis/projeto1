@@ -1,0 +1,83 @@
+<html>
+	
+	<head>
+        <title>Media - Are we in trouble?</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='style.css'>
+		<script
+		  src="https://code.jquery.com/jquery-3.4.1.js"
+		  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		  crossorigin="anonymous">
+	   </script>
+	</head>
+
+    <body>
+    
+        <div id='background'>
+            <img src='images/background.jpg' alt='Are we in trouble?'>
+        </div>
+        
+        <div id="picture-1" class='hidden-on-start picture-container'>
+            <img src='images/celebration.jpg' alt='Celebration or condemnation'>
+        </div>
+        
+        <div id="picture-2" class='hidden-on-start picture-container'>
+            <img src='images/augmenting.jpg' alt='Augmenting human intellect'>
+        </div>
+        
+        <div id="picture-3" class='hidden-on-start picture-container'>
+            <img src='images/information.jpg' alt='Information, knowledge, intelligence'>
+        </div>
+  
+        <div id='navigation'>
+        
+            <div>
+                <a href='documents/celebration_or_condemnation.pdf' target='_blank' id='text-1' class='cursor'>Celebration or condemnation</a>
+            </div>
+        
+            <div>
+                <a href='documents/augmenting_human_intellect.pdf' target='_blank' id='text-2' class='cursor'>Augmenting human intellect</a>
+            </div>
+        
+            <div>
+                <a href='documents/information_knowledge_intelligence.pdf' target='_blank' id='text-3' class='cursor'>Information, knowledge, intelligence</a>
+            </div>
+            
+        </div>
+
+        <p id="footer">(Old) new media</p>
+        
+        <script type='text/javascript'>
+        
+                $("#text-1").hover(
+                    function(e){
+                $("#picture-1").show();
+                },
+                    function(e){
+                $("#picture-1").hide();
+                });
+            
+            
+                $("#text-2").hover(
+                    function(e){
+                $("#picture-2").show();
+                },
+                    function(e){
+                $("#picture-2").hide();
+                });
+            
+            
+                $("#text-3").hover(
+                    function(e){
+                $("#picture-3").show();
+                },
+                    function(e){
+                $("#picture-3").hide();
+                });
+            
+            
+        </script>
+        
+    </body>
+    
+<html>
